@@ -15,12 +15,7 @@ import { PaymentComponent } from './payment/payment.component';
 import { HeaderComponent } from './header/header.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
-import {
-  MatToolbarModule,
-  MatCardModule,
-  MatButtonModule,
-  MatIconModule,
-  } from '@angular/material';
+
 
 @NgModule({
   imports: [
@@ -28,11 +23,9 @@ import {
     FormsModule,
     StoreModule.forRoot({ blockchain: addCoinReducer }),
     ReactiveFormsModule,
-    HttpClientModule,  FlexLayoutModule,
-    MatToolbarModule,
-    MatCardModule,
-    MatButtonModule,
-    MatIconModule,
+    HttpClientModule,
+    FlexLayoutModule,
+  
   ],
   declarations: [
     AppComponent,
@@ -42,11 +35,11 @@ import {
     HeaderComponent,
     PaymentComponent
   ],
-// providers: [{
-//  provide: HTTP_INTERCEPTORS,
- // useClass: ServerErrorsInterceptor,
- // multi:true
-//}],
+  // providers: [{
+  //  provide: HTTP_INTERCEPTORS,
+  // useClass: ServerErrorsInterceptor,
+  // multi:true
+  //}],
 
   bootstrap: [AppComponent]
 })
