@@ -28,7 +28,11 @@ import {
     FormsModule,
     StoreModule.forRoot({ blockchain: addCoinReducer }),
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,  FlexLayoutModule,
+    MatToolbarModule,
+    MatCardModule,
+    MatButtonModule,
+    MatIconModule,
   ],
   declarations: [
     AppComponent,
