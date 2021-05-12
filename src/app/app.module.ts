@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 import { FinalComponent } from './final/final.component';
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
@@ -17,7 +18,8 @@ import { PaymentComponent } from './payment/payment.component';
     BrowserModule,
     FormsModule,
     StoreModule.forRoot({ blockchain: addCoinReducer }),
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   declarations: [
     AppComponent,
