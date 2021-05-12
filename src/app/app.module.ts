@@ -12,6 +12,15 @@ import { DisplayComponent } from './display/display.component';
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
 //import { AppHttpInterceptor } from './http.interceptor';
 import { PaymentComponent } from './payment/payment.component';
+import { HeaderComponent } from './header/header.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
+
+import {
+  MatToolbarModule,
+  MatCardModule,
+  MatButtonModule,
+  MatIconModule,
+  } from '@angular/material';
 
 @NgModule({
   imports: [
@@ -26,8 +35,14 @@ import { PaymentComponent } from './payment/payment.component';
     DisplayComponent,
     HelloComponent,
     FinalComponent,
+    HeaderComponent,
     PaymentComponent
   ],
+// providers: [{
+//  provide: HTTP_INTERCEPTORS,
+ // useClass: ServerErrorsInterceptor,
+ // multi:true
+//}],
 
   bootstrap: [AppComponent]
 })
