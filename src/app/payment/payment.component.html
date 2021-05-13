@@ -104,6 +104,10 @@
   </div>
 </div>
 <div class="form-container">
+    <div class="field-container">
+    <label for="name">Amount</label>
+    <input id="name" maxlength="20" inputmode="numeric" type="text" #Budget>
+  </div>
   <div class="field-container">
     <label for="name">Name</label>
     <input id="name" maxlength="20" type="text" #CardName>
@@ -124,7 +128,7 @@
     <label for="securitycode">Security Code</label>
     <input id="securitycode" type="text" pattern="[0-9]*" inputmode="numeric"#code>
   </div>
-   <button (click)="add(cardNo.value); cardNo.value=''">
+   <button (click)="add(cardNo.value,CardName.value,date.value,code.value); cardNo.value=''">
     add
   </button>
 </div>

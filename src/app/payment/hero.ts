@@ -1,9 +1,9 @@
 export interface Hero {
   id: number;
-  name: string;
-   creditCardNumber: string;
+
+  creditCardNumber: string;
   cardHolder: string;
-  expirationDate: Date;
+  expirationDate: string;
   securityCode: string;
   //amount: number;
   MonthlyAdvertisingBudget: number;
